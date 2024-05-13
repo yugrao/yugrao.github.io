@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiempos+Text:wght@400;700&display=swap');
+
+body {
+margin: 0;
+padding: 0;
+height: 300vh;
+background: linear-gradient(45deg, #000000, #111111);
+background-size: 400% 400%;
+animation: gradientAnimation 10s ease infinite;
+}
+@keyframes gradientAnimation {
+0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
+}
+.circle-container {
+position: fixed;
+top: 50vh;
+left: 0;
+right: 0;
+transform: translateY(-100px);
+display: flex;
+justify-content: center;
+z-index: 1;
+}
+.circle {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+position: absolute;
+mix-blend-mode: screen;
+}
+.circle-red {
+background-color: rgba(255, 0, 0, 1);
+}
+.circle-green {
+background-color: rgba(0, 255, 0, 1);
+}
+.circle-blue {
+background-color: rgba(0, 0, 255, 1);
+}
+.name {
+position: absolute;
+top: 50vh;
+left: 50%;
+transform: translate(-50%, -50%);
+color: black;
+font-family: 'Tiempos Text', garamond, serif;
+font-size: 36px;
+font-weight: 500;
+text-align: center;
+z-index: 2;
+}
