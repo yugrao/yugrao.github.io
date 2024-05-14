@@ -98,21 +98,27 @@ body {
 }
 
 .fifty-fifty {
+    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 15%;
 }
 
-.FIFTY-fifty,
-.fifty-FIFTY {
-    flex: 0 0 calc(50% - 10%);
+.FIFTY-fifty {
+    width:32.5%;
     color: #333;
-    margin: 0 5% 5%;
+    margin: 5% 2.5% 5% 15%;
+}
+
+.fifty-FIFTY {
+    width:32.5%;
+    color: #333;
+    margin: 5% 15% 5% 2.5%;
 }
 
 .single-col {
-    margin: 5% 15% 5% 15%;
+  
+  background-color: #fff;
+  padding: 5% 15% 5% 15%;
 }
 
 h2 {
