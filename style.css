@@ -10,7 +10,6 @@ body {
     font-family: "Tiempos Text", garamond, serif;
 }
 
-
 .circle-container {
     --blursize: 100px;
     position: fixed;
@@ -66,8 +65,8 @@ body {
 .card {
     background-color: #fff;
     position: relative;
+    z-index: 100;
 }
-/* Existing styles */
 
 .hero {
     position: relative;
@@ -76,122 +75,102 @@ body {
     justify-content: center;
     /* align-items: center; */
     background: black;
-  }
-  
-  .sixty-forty {
+}
+
+.sixty-forty {
     /* padding: 80px 40px; */
     background-color: #fff;
     display: flex;
     align-items: center;
     margin-top: 0;
-  }
-  
-  .SIXTY-forty {
+}
+
+.SIXTY-forty {
     flex: 1 1 60%;
     color: #333;
     margin: 5% 2.5% 5% 15%;
-  }
-  
-  .sixty-FORTY {
+}
+
+.sixty-FORTY {
     flex: 1 1 40%;
     color: #333;
     margin: 5% 15% 5% 2.5%;
-  }
+}
 
-  .fifty-fifty {
+.fifty-fifty {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 15%;
-  }
-  
-  .FIFTY-fifty,
-  .fifty-FIFTY {
+}
+
+.FIFTY-fifty,
+.fifty-FIFTY {
     flex: 0 0 calc(50% - 10%);
     color: #333;
     margin: 0 5% 5%;
-  }
+}
 
-  .single-col {
+.single-col {
     margin: 5% 15% 5% 15%;
-  }
+}
 
-  h2 {
+h2 {
     margin-top: 0;
     font-size: 28px;
     font-weight: bold;
     color: #000;
-  }
-  
-  p {
-    font-size: 18px;
-    line-height: 1.6;
-  }
-
-.sixty-FORTY img {
-  width:400px;
-  height:400px;
 }
 
-/* Mobile */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.sixty-FORTY img {
+    width: 400px;
+    height: 400px;
+}
+
 .menu {
     position: fixed;
-    top: 20px;
+    top: 50%;
     left: 20px;
+    transform: translateY(-50%);
+    mix-blend-mode: difference;
+    color: #fff;
+    background: black;
     z-index: 999;
-    background: white;
-    mix-blend-mode: normal;
-    color:#000;
-  }
-  
-  .menu ul {
+}
+
+.menu ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .menu li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .menu a {
+}
+
+.menu li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.menu a {
     text-decoration: none;
-    /* color: #fff; */
+    color: #fff;
     font-size: 18px;
     transition: color 0.3s;
-  }
-  
-  .menu a.active {
+}
+
+.menu a.active {
     font-weight: bold;
-  }
-  
-  .menu a:hover {
+}
+
+.menu a:hover {
     color: #ff0;
-  }
-  
-  /* Laptop */
-  @media screen and (min-width: 768px) {
-    .menu {
-      top: 50%;
-      left: 20px;
-      transform: translateY(-50%);
-      mix-blend-mode: difference;
-      color:#fff;
-      background: black;
-    }
-  
-    .menu li {
-      display: block;
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-    .menu a{
-        color: #fff;
-    }
-  }
-  
-  .social-icons {
+}
+
+.social-icons {
     position: fixed;
     top: 50%;
     right: 20px;
@@ -201,71 +180,72 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .social-icons a {
+}
+
+.social-icons a {
     display: block;
     margin-bottom: 10px;
     color: #fff;
     font-size: 24px;
     transition: color 0.3s;
-  }
-  
-  .social-icons a:hover {
+}
+
+.social-icons a:hover {
     color: #ff0;
-  }    
-  .name {
+}
+
+.name {
     /* Existing styles */
     transition: transform 0.2s ease-out, font-weight 0.3s;
-  }
-  
-  .name.bold {
-    font-weight: bold;
-  }
+}
 
-  footer {
+.name.bold {
+    font-weight: bold;
+}
+
+footer {
     background-color: #000;
     color: #fff;
     padding: 40px 0;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 960px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-  }
-  
-  .contact-info,
-  .fun-links {
+}
+
+.contact-info,
+.fun-links {
     flex: 0 0 45%;
-  }
-  
-  .contact-info h3,
-  .fun-links h3 {
+}
+
+.contact-info h3,
+.fun-links h3 {
     font-size: 20px;
     margin-bottom: 15px;
-  }
-  
-  .contact-info p {
+}
+
+.contact-info p {
     margin-bottom: 10px;
-  }
-  
-  .fun-links ul {
+}
+
+.fun-links ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .fun-links ul li {
+}
+
+.fun-links ul li {
     margin-bottom: 10px;
-  }
-  
-  .fun-links ul li a {
+}
+
+.fun-links ul li a {
     color: #fff;
     text-decoration: none;
-  }
-  
-  .fun-links ul li a:hover {
+}
+
+.fun-links ul li a:hover {
     text-decoration: underline;
-  }
+}
